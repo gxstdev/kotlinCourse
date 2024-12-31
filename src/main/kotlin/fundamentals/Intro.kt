@@ -19,6 +19,10 @@ class Address(val street: String, var number: Int){
     }
 }
 
+private fun returnTextValue(value: Int, textValue: String = "0"){
+    println("$value -> $textValue")
+}
+
 fun main(){
     var a = Address("Um", 0)
     a.number = 344
@@ -30,4 +34,7 @@ fun main(){
 
     println(p2.address)
     println(p2.name)
+
+    returnTextValue(5)
+    returnTextValue(textValue = "vinte", value = 20)
 }
